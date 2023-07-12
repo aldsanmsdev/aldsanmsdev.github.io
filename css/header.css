@@ -1,0 +1,253 @@
+/* Header styles */
+header {
+    height: 140px;
+    background: linear-gradient(160.5deg,
+    #19610c 0px 85px, #ff4c01 86px 120px, #fffcec 121px 100%);
+    padding: 2px 0;
+    border-bottom: 1px solid #D0B67D;
+    position: sticky;
+    top:0;
+  }
+  
+  header #top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  
+  header #top #header-logo img{
+    height: 120px;
+  }
+  
+
+  
+  #header-title a{
+  text-decoration: none;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1f461a;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav li {
+    list-style: none;
+    margin-right: 20px;
+    margin-top: -30px;
+  }
+
+  nav li img {
+    width: 40px;
+    margin-left: 80px;
+  }
+  
+  nav a {
+    color: #1f461a;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #0070c0;
+  }
+  
+  .lang {
+  position: relative;
+  display: inline-block;
+  height: 45px;
+  }
+  
+  .lang-btn {
+  background-color: transparent;
+  border: none;
+  }
+  
+  .lang-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  }
+  
+  .lang-content a {
+  display: flex;
+  align-items: center;
+  }
+  
+  .lang-content a:hover {
+  background-color: #f2f2f2;
+  }
+  
+  .lang:hover .lang-content {
+  display: block;
+  }
+  
+  .lang-content img {
+  width: 49px;
+  height: 35px;
+  
+  margin-bottom: 10px;
+  
+  cursor: pointer;
+  }
+
+
+  .table {
+    width: 320px;
+    height: 320px;
+    display: none;
+    background-image: url(../img/bois.jpg);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    border-radius: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: -120px;
+    margin-top: -90px;
+  }
+
+  .pizza {
+
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 255, 0, 0);
+    border-radius: 50%;
+    position: relative;
+    transition: transform 500ms ease-out;
+  }
+
+  .pizza:hover {
+    transform: rotate(-5deg);
+  }
+
+  .slice {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transform-origin: bottom;
+    clip-path: polygon(51% 0px, 100% 0%, 50.5% 49%);
+    border-radius: 50%;
+    background-color: #ffac47;
+    transform-origin: 50%;
+    transition: all 100ms ease-out;
+  }
+
+  .slice::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/pizzaNav.png");
+    opacity: 1;
+    background-size: 100%;
+    background-position: center;
+  }
+  
+
+  .sliceOk:hover {
+    width: 102%;
+    height: 102%;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  .slice p {
+    margin-top: 50%;
+    transform: rotate(-69deg);
+    font-size: 1.4em;
+    font-weight:bold;
+    color: #132a10;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 1),
+    0 0 10px rgba(255, 255, 255, 1),
+    0 0 15px rgba(255, 255, 255, 1),
+    0 0 20px rgba(255, 255, 255, 1),
+    0 0 40px rgba(255, 255, 255, 1);
+    
+    border-radius: 10px;
+    text-align: end;
+  }
+  
+  .slice1 {
+    transform: rotate(25deg);
+  }
+  .slice1::before {
+    transform: rotate(0deg);
+  }
+  
+  .slice2 {
+    transform: rotate(70deg);
+  }
+  .slice2::before {
+    transform: rotate(-45deg);
+  }
+  
+  .slice3 {
+    transform: rotate(115deg);
+  }
+  .slice3::before {
+    transform: rotate(-90deg);
+  }
+  
+  .slice4 {
+    transform: rotate(160deg);
+  }
+  .slice4::before {
+    transform: rotate(-135deg);
+  }
+  
+  .slice5 {
+    transform: rotate(205deg);
+  }
+  .slice5::before {
+    transform: rotate(-180deg);
+  }
+  
+  .slice6 {
+    transform: rotate(250deg);
+  }
+  .slice6::before {
+    transform: rotate(-225deg);
+  }
+  
+  .slice7 {
+    transform: rotate(295deg);
+  }
+  .slice7::before {
+    transform: rotate(-270deg);
+  }
+  
+  .slice8 {
+    transform: rotate(340deg);
+  }
+  .slice8::before {
+    transform: rotate(-315deg);
+  }
+  
+
+
+  @media (max-width: 600px) {
+    header #top {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+      }
+
+      nav li img {
+        width: 40px;
+        margin-left: 40px;
+      }
+
+  }
