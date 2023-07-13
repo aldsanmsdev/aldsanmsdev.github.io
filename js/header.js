@@ -5,7 +5,7 @@ document.write(
                 '<a href="accueil.html"><h1 id="header-title-name"></h1></a>'+
             '</div>'+
             '<div id="header-logo">'+
-                '<a href="accueil.html"><img src="../img/logo01.png" id="header-logo-id"></a>'+
+                '<a href="accueil.html"><img src="../img/logo.png" id="header-logo-id"></a>'+
             '</div>'+
         '</div>'+
         

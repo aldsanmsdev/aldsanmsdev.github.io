@@ -138,7 +138,7 @@ header {
     transform-origin: bottom;
     clip-path: polygon(51% 0px, 100% 0%, 50.5% 49%);
     border-radius: 50%;
-    background-color: #ffac47;
+    background-color: #ffac4700;
     transform-origin: 50%;
     transition: all 100ms ease-out;
   }
