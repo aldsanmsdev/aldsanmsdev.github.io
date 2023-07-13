@@ -1,8 +1,7 @@
 /* Header styles */
 header {
     height: 140px;
-    background: linear-gradient(160.5deg,
-    #19610c 0px 85px, #ff4c01 86px 120px, #fffcec 121px 100%);
+    background-color: #fffcec;
     padding: 2px 0;
     border-bottom: 1px solid #D0B67D;
     position: sticky;
@@ -42,7 +41,7 @@ header {
   nav li {
     list-style: none;
     margin-right: 20px;
-    margin-top: -30px;
+    margin-top: -40px;
   }
 
   nav li img {
@@ -239,11 +238,6 @@ header {
 
 
   @media (max-width: 600px) {
-    header #top {
-        width: 100%;
-        display: flex;
-        justify-content: end;
-      }
 
       nav li img {
         width: 40px;
