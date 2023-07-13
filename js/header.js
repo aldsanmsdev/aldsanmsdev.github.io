@@ -57,7 +57,7 @@ function pageClicked(){
 window.addEventListener('click', pageClicked);
 
 function changeHeader(){
-    document.querySelector('header').style.top = "-"+(document.getElementById("bas").offsetTop -40)+"px";
+    document.querySelector('header').style.top = "-"+(document.getElementById("bas").offsetTop -50)+"px";
 };
 
 window.addEventListener('resize', changeHeader);
