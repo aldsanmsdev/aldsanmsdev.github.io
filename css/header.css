@@ -6,6 +6,7 @@ header {
     border-bottom: 1px solid #D0B67D;
     position: sticky;
     top:0;
+    z-index: 100;
   }
   
   header #top {
