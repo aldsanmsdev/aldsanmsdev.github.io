@@ -97,6 +97,36 @@
             }
         }
 
+        @media screen and (max-width: 400px) {
+            .items {
+                scale: 0.8;
+                margin-top: 80px;
+            }
+
+            .item.prev {
+                transform: translate(-70%, -50%);
+            }
+
+            .item.next {
+                transform: translate(-35%, -50%);
+            }
+        }
+
+        @media screen and (max-height: 680px) {
+            .items {
+                scale: 0.8;
+                margin-top: 100px;
+            }
+
+            .item.prev {
+                transform: translate(-70%, -50%);
+            }
+
+            .item.next {
+                transform: translate(-35%, -50%);
+            }
+        }
+
 
         .items .button-container {
             position: absolute;

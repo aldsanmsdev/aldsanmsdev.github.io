@@ -16,6 +16,7 @@ body {
 
 .container {
   max-width: 1200px;
+  min-width: 350px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -55,7 +56,7 @@ overflow: hidden;
 
 #hero-content-info{
 width: 60%;
-min-width: 400px;
+min-width: 350px;
 height: 500px;
 
 padding: 10px;
@@ -207,6 +208,17 @@ footer a:hover {
 
 .btn:hover {
   background-color: #45a049;
+}
+
+@media screen and (max-width: 400px) {
+  #hero-content-info{
+    min-width: 350px;
+    padding-left: 20px;
+    }
+
+    #hero-content-info-title {
+      width: 320px;
+      }
 }
 
 
