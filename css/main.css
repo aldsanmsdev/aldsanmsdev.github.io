@@ -219,6 +219,73 @@ footer a:hover {
     #hero-content-info-title {
       width: 320px;
       }
+
+      #hero-content-pic{
+        scale: 0.9;
+        }
+
+}
+
+@media screen and (max-width: 350px) {
+  #hero-content-info{
+    min-width: 300px;
+    padding-left: 0px;
+    }
+
+    #hero-content-info-title {
+      width: 260px;
+      }
+
+      
+      #hero-content-pic{
+        scale: 0.85;
+        }
+
+}
+
+@media screen and (max-width: 320px) {
+  #hero-content-info{
+    min-width: 260px;
+    margin-left: -40px;
+    }
+
+    #hero-content-info-title {
+      width: 230px;
+      }
+
+      
+      #hero-content-pic{
+        scale: 0.7;
+        margin-left: -40px;
+        margin-bottom: -40px;
+        }
+        .hero {
+          height: 1200px;
+        }
+
+}
+
+@media screen and (max-width: 280px) {
+  #hero-content-info{
+    min-width: 240px;
+    margin-left: -80px;
+    }
+
+    #hero-content-info-title {
+      width: 220px;
+      }
+
+      
+      #hero-content-pic{
+        scale: 0.6;
+        margin-left: -80px;
+        margin-bottom: -80px;
+        }
+
+        .hero {
+          height: 1200px;
+        }
+
 }
 
 
