@@ -10,211 +10,10 @@
 
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/menu.css">
 
     <script src="../js/langue.js"></script>
-
-    <style>
-
-        .hero {
-            width: 100%;
-            height: 800px;
-            transition: all 3000ms ease-in-out;
-        }
-
-        .items {
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            user-select: none;
-            margin-top: 400px;
-        }
-
-        .items .item {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 331px;
-            height: 700px;
-            overflow: hidden;
-            transition: all 300ms ease-in-out;
-            z-index: -1;
-            opacity: 0;
-            border-radius: 10px;
-        }
-
-        .item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .item.active {
-            opacity: 1;
-            z-index: 99;
-        }
-
-        .item.prev {
-            z-index: 2;
-            opacity: 0.25;
-            scale: 0.95;
-            transform: translate(-125%, -50%);
-        }
-
-        .item.next {
-            z-index: 2;
-            opacity: 0.25;
-            scale: 0.95;
-            transform: translate(25%, -50%);
-        }
-
-        @media screen and (max-width: 840px) {
-            .items {
-                scale: 0.9;
-            }
-
-            .item.prev {
-                transform: translate(-110%, -50%);
-            }
-
-            .item.next {
-                transform: translate(10%, -50%);
-            }
-
-            .hero {
-                width: 100px;
-            }
-        }
-        @media screen and (max-width: 640px) {
-            .items {
-                scale: 0.9;
-            }
-
-            .item.prev {
-                transform: translate(-70%, -50%);
-            }
-
-            .item.next {
-                transform: translate(-35%, -50%);
-            }
-
-            .hero {
-                width: 100px;
-            }
-        }
-
-        @media screen and (max-width: 400px) {
-            .items {
-                scale: 0.8;
-            }
-
-            .item.prev {
-                transform: translate(-70%, -50%);
-            }
-
-            .item.next {
-                transform: translate(-35%, -50%);
-            }
-
-            .hero {
-                width: 100px;
-            }
-        }
-
-
-
-
-
-        @media screen and (max-height: 680px) {
-            .items {
-                scale: 0.8;
-            }
-
-        }
-
-        @media screen and (max-height: 450px) {
-            .items {
-                scale: 0.8;
-            }
-
-        }
-
-
-
-        .items .button-container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 350px;
-            z-index: 100;
-        }
-
-        .button-container .button {
-            color: #fff;
-            font-size: 32px;
-            cursor: pointer;
-            position: relative;
-            opacity: 0.75;
-            transition: all 300ms ease-in-out;
-        }
-
-        .button-container .button:hover {
-            opacity: 1;
-        }
-
-        .button-container .button:before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 50px;
-            height: 50px;
-            background-color: #7f640599;
-            border-radius: 50%;
-            z-index: -99;
-        }
-
-        .button-container .button:nth-child(1) {
-            float: left;
-        }
-
-        .button-container .button:nth-child(2) {
-            float: right;
-        }
-
-
-        .image {
-            width: 100%;
-            height: 100%;
-            background-image: url('../img/menu1.jpg');
-            background-size: cover;
-        }
-
-        .image2 {
-            width: 100%;
-            height: 100%;
-            background-image: url('../img/menu2.jpg');
-            background-size: cover;
-        }
-
-        .img1 {
-       
-            background-position: 0 0;
-        }
-
-        .img2 {
-         
-            background-position: 50% 0; 
-        }
-
-        .img3 {
-            
-            background-position: 100% 0;
-        }
-
-    </style>
+    
 </head>
 <body>
   
@@ -225,82 +24,33 @@
     <section class="hero">
       <div class="container">
         <div class="items">
-		<div class="item">
-			<div class="image img1"></div>
-		</div>
-		<div class=" item">
-			<div class="image img2"></div>
-		</div>
-		<div class="item active">
-			<div class="image img3"></div>
-		</div>
-		<div class="item next">
-			<div class="image2 img1"></div>
-		</div>
-        <div class="item">
-			<div class="image2 img2"></div>
-		</div>
-		<div class="item prev">
-			<div class="image2 img3"></div>
-		</div>
-		<div class="button-container">
-			<div class="button">&#8249;</div>
-			<div class="button">&#8250;</div>
-		</div>
-	</div>
+            <div class="item">
+                <div class="image img1"></div>
+            </div>
+            <div class=" item">
+                <div class="image img2"></div>
+            </div>
+            <div class="item active">
+                <div class="image img3"></div>
+            </div>
+            <div class="item next">
+                <div class="image2 img1"></div>
+            </div>
+            <div class="item">
+                <div class="image2 img2"></div>
+            </div>
+            <div class="item prev">
+                <div class="image2 img3"></div>
+            </div>
+            <div class="button-container no-select">
+                <div class="button">&#8249;</div>
+                <div class="button">&#8250;</div>
+            </div>
+	    </div>
       </div>
     </section>
 
-    <script>
-        const slider = document.querySelector(".items");
-		const slides = document.querySelectorAll(".item");
-		const button = document.querySelectorAll(".button");
-
-		let current = 2;
-		let prev = 5;
-		let next = 1;
-
-		for (let i = 0; i < button.length; i++) {
-			button[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
-		}
-
-		const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
-
-		const gotoNext = () => current < 5 ? gotoNum(current + 1) : gotoNum(0);
-
-		const gotoNum = number => {
-			current = number;
-			prev = current - 1;
-			next = current + 1;
-
-			for (let i = 0; i < slides.length; i++) {
-				slides[i].classList.remove("active");
-				slides[i].classList.remove("prev");
-				slides[i].classList.remove("next");
-			}
-
-			if (next == 6) {
-				next = 0;
-			}
-
-			if (prev == -1) {
-				prev = 5;
-			}
-
-			slides[current].classList.add("active");
-			slides[prev].classList.add("prev");
-			slides[next].classList.add("next");
-		}
-
-        window.addEventListener("resize",()=>{
-            var heroElements = document.getElementsByClassName("hero");
-
-            for (let i = 0; i < heroElements.length; i++) {
-                heroElements[i].style.width = (Math.random() * 100)+"px";
-            }
-        });
-    </script>
-
+    <script src="../js/menu.js"></script>
 
     <footer>
       <script src="../js/footer.js"></script>

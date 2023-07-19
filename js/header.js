@@ -16,7 +16,7 @@ document.write(
         '</ul>'+
     '</nav>'+
     '<div class="table">'+
-        '<div class="pizza">'+
+        '<div class="pizza no-select">'+
             '<div class="slice sliceOk slice1" onclick="changePage(`accueil`)"><p>Accueil</p></div>'+
             '<div class="slice sliceOk slice2" onclick="changePage(`menu`)"><p>Menu</p></div>'+
             '<div class="slice sliceOk slice3" onclick="changePage(`info`)"><p>À propos</p></div>'+

@@ -14,6 +14,10 @@ body {
   background-color: #fffcec;
 }
 
+.no-select {
+  user-select: none;
+}
+
 .container {
   max-width: 1200px;
   min-width: 350px;
