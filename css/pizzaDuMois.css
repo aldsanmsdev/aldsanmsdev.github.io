@@ -1,0 +1,135 @@
+#hero-piza-du-mois{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    
+    margin-top: 10px;  
+}
+
+#hero-piza-du-mois-pic{
+    width: 350px;
+    height: 420px;
+    
+    background-color: #D0B67D;
+    
+    border-bottom-left-radius: 60%;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    
+    overflow: hidden;
+}
+
+#hero-piza-du-mois-pic img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#hero-piza-du-mois-info{
+width: 60%;
+min-width: 350px;
+height: 300px;
+
+display: flex;
+flex-direction: column;
+
+margin-bottom: 6em;
+
+text-align: justify;
+}
+
+#hero-piza-du-mois-info-title{
+width: 100%;
+display: flex;
+
+justify-content: space-between;
+align-items: center;
+}
+#hero-piza-du-mois-info-title div{
+flex: 0.95;
+height: 3px;
+background-color: #D0B67D;
+}
+
+
+@media screen and (max-width: 400px) {
+    #hero-piza-du-mois-info{
+      min-width: 350px;
+      padding-left: 0px;
+      }
+  
+      #hero-piza-du-mois-info-title {
+        width: 320px;
+        }
+  
+        #hero-piza-du-mois-pic{
+          scale: 0.9;
+          }
+  
+  }
+  
+  @media screen and (max-width: 350px) {
+    #hero-piza-du-mois-info{
+      min-width: 300px;
+      padding-left: 0px;
+      }
+  
+      #hero-piza-du-mois-info-title {
+        width: 260px;
+        }
+  
+        
+        #hero-piza-du-mois-pic{
+          scale: 0.85;
+          }
+  
+  }
+  
+  @media screen and (max-width: 320px) {
+    #hero-piza-du-mois-info{
+      min-width: 260px;
+      margin-left: -40px;
+      }
+  
+      #hero-piza-du-mois-info-title {
+        width: 230px;
+        }
+  
+        
+        #hero-piza-du-mois-pic{
+          scale: 0.7;
+          margin-left: -40px;
+          margin-bottom: -40px;
+          }
+          .hero {
+            height: 1200px;
+          }
+  
+  }
+  
+  @media screen and (max-width: 280px) {
+    #hero-piza-du-mois-info{
+      min-width: 240px;
+      margin-left: -80px;
+      }
+  
+      #hero-piza-du-mois-info-title {
+        width: 220px;
+        }
+  
+        
+        #hero-piza-du-mois-pic{
+          scale: 0.6;
+          margin-left: -80px;
+          margin-bottom: -80px;
+          }
+  
+          .hero {
+            height: 1200px;
+          }
+  
+  }

@@ -18,11 +18,13 @@ var all={
     adresse: ["1 avenue Michel Rocard"],
     ville: ["Villemur-sur-Tarn"],
     cp: ["31340"],
-    pays: ["France"]
+    pays: ["France"],
+    insta:["@vertolivepizza"]
 };
 
 var ReseauxSociaux={
-    facebook: ["https://www.facebook.com/people/Vert-olive-pizza/100063702392327/?sk=about"]
+    facebook: ["https://www.facebook.com/people/Vert-olive-pizza/100063702392327/?sk=about"],
+    instagram: ["https://www.instagram.com/vertolivepizza/"]
 };
 
 
@@ -30,7 +32,8 @@ var accueil={
     t1:[""],
 
     i1:["La pizza autrement"],
-    i2:["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu leo tortor. Nunc eleifend malesuada magna, a sollicitudin tortor luctus ac. Aenean eget eros sit amet sapien commodo viverra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris scelerisque dapibus justo a aliquet. Cras non commodo tellus. In dignissim, quam quis euismod iaculis, risus nisi commodo elit, ac tincidunt risus nibh vel nulla. Etiam rutrum, lorem at accumsan dictum, quam libero accumsan magna, et auctor nibh lectus et sapien."],
+    i2:["Bienvenue sur le site internet de Vert Olive Pizza ! Vous découvrirez ici des informations concernant notre kiosque, notre délicieux menu, ainsi que les moyens de nous contacter. Nous vous souhaitons une agréable visite et nous espérons vous retrouver bientôt."],
+
 };
 
 var contact={

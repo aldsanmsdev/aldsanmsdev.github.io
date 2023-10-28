@@ -4,6 +4,7 @@ document.write(
             '<h3>'+footer.i1[lan]+'</h3>'+
             '<ul class="social-media">'+
                 '<li><a href="'+ReseauxSociaux.facebook+'" target="_blank">Facebook</a></li>'+
+                '<li><a href="'+ReseauxSociaux.instagram+'" target="_blank">Instagram</a></li>'+
             '</ul>'+
         '</div>'+
         '<div class="footer-section">'+
@@ -17,10 +18,10 @@ document.write(
         '<div class="footer-section">'+
             '<h3>'+footer.i5[lan]+'</h3>'+
             '<ul class="navigation">'+
-                '<li><a href="accueil.html">'+baniere.l1[lan]+'</a></li>'+
-                '<li><a href="menu.html">'+baniere.l2[lan]+'</a></li>'+
-                '<li><a href="info.html">'+baniere.l3[lan]+'</a></li>'+
-                '<li><a href="contact.html">'+baniere.l4[lan]+'</a></li>'+
+                '<li><a href="accueil.html#accueil">'+baniere.l1[lan]+'</a></li>'+
+                '<li><a href="accueil.html#menu">'+baniere.l2[lan]+'</a></li>'+
+                '<li><a href="accueil.html#info">'+baniere.l3[lan]+'</a></li>'+
+                '<li><a href="accueil.html#contact">'+baniere.l4[lan]+'</a></li>'+
             '</ul>'+
         '</div>'+
     '</div>'+

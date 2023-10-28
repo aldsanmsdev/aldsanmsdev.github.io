@@ -1,4 +1,8 @@
-.contact-container {
+.contacts {
+  margin-top: 50px;
+} 
+
+  .contact-container {
     width: 100%;
     min-width: 350px;
     padding: 10px;
