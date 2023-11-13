@@ -1,4 +1,4 @@
 pizza = {
-    nom : "Pizza d'octobre",
-    description : "En octobre venez découvrir cette recette de pâte à pizza au charbon végétal (idéal pour la digestion), une base de citrouille, emmental & mozzarella, marrons, cèpes, poitrine fumée et persillade."
+    nom : "Pizza de novembre",
+    description : "En novembre venez découvrir cette recette de pâte à la compote de pomme, Tome du Ramier, Coppa, et noix. En partenariat avec la ferme de pellausy et la ferme du ramier."
 }

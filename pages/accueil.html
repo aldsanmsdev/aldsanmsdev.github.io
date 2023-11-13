@@ -4,21 +4,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Vert olive pizza</title>
-    <link rel="icon" href="../img/logo.png" type="image/png">
-
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/header.css">
-
-    <link rel="stylesheet" href="../css/info.css">
-    <link rel="stylesheet" href="../css/menu.css">
-    <link rel="stylesheet" href="../css/pizzaDuMois.css">
-    <link rel="stylesheet" href="../css/contact.css">
-    
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="../js/langue.js"></script>
-    <script src="../pizzaDuMois/description.js"></script>
+  <title>Vert olive pizza</title>
+  <meta name="description" content="Découvrez les délices de la pizzeria Vert Olive Pizza à Villemur-sur-Tarn. Savourez des pizzas artisanales préparées avec des ingrédients frais et de qualité. Profitez de notre large choix de saveurs et de nos options végétariennes. Commandez par téléphone ou venez déguster sur place dans une ambiance chaleureuse." />
+  <link rel="icon" href="https://github.com/vertolivepizza/vertolivepizza.github.io/blob/main/img/logo.png" type="image/png">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/info.css">
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="../css/pizzaDuMois.css">
+  <link rel="stylesheet" href="../css/contact.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="../js/langue.js"></script>
+  <script src="../pizzaDuMois/description.js"></script>
 </head>
 <body>
     <header>
@@ -26,29 +23,27 @@
     </header>
 
     <div id="accueil"></div>  
-    <section class="hero">
-        <div class="container">
-          <script>
-            document.write(	
-              '<div id="hero-content">'+
-                  '<div id="hero-content-pic">'+
-                    '<img src="../img/logo.png">'+
-                  '</div>'+
-                  '<div id="hero-content-info">'+
-                      '<div id="hero-content-info-title">'+
-                          '<h1>Vert olive pizza</h1>'+
-                          '<div></div>'+
-                      '</div>'+
-                      '<p>'+accueil.i1[lan]+'</p>'+
-                      '<p><br></p>'+
-                      '<p id="hero-content-info-txt01">'+accueil.i2[lan]+'</p>'+
-                  '</div>'+
+    <div class="container">
+      <script>
+        document.write(	
+          '<div id="hero-content">'+
+              '<div id="hero-content-pic">'+
+                '<img src="../img/imgAccueil02.jpg" alt="Image d accueil">'+
               '</div>'+
-              '<p><br></p>'
-            );
-          </script>
-        </div>
-    </section>
+              '<div id="hero-content-info">'+
+                  '<div id="hero-content-info-title">'+
+                      '<h1>Vert olive pizza</h1>'+
+                      '<div></div>'+
+                  '</div>'+
+                  '<p>'+accueil.i1[lan]+'</p>'+
+                  '<p><br></p>'+
+                  '<p id="hero-content-info-txt01">'+accueil.i2[lan]+'</p>'+
+              '</div>'+
+          '</div>'+
+          '<p><br></p>'
+        );
+      </script> 
+    </div>
 
     <div id="info"><br><br><br></div>
     <section class="sep">
@@ -64,17 +59,24 @@
         <p>
             Aujourd'hui, j'ai décidé de revenir sur les lieux qui m'ont vu grandir. Avec une pâte maturée lentement, légère et croustillante, des ingrédients exclusivement frais et des idées de pizzas originales, je suis ravi de partager ma passion culinaire avec ma ville natale, Villemur.
         </p>
-        <p>
-            Situé à l'entrée de Villemur (sur le parking du magasin TOUT FAIRE MATÉRIAUX, LE P'TIT PANIER et le TABAC), notre kiosque vous offre une expérience culinaire unique dans un cadre convivial.
-        </p>
-        <p>
-            C'est avec grand plaisir que je vous accueille du mardi au samedi de 18h à 21h30 pour déguster nos délicieuses pizzas.
-        </p>
+        
+        <div id="hero-info-kiosque">
+          <img src="../img/kiosque.jpg" class="kiosque-photo" alt="Kiosque">
+          <div>
+            <p>
+              Situé à l'entrée de Villemur (sur le parking du magasin TOUT FAIRE MATÉRIAUX, LE P'TIT PANIER et le TABAC), notre kiosque vous offre une expérience culinaire unique dans un cadre convivial.
+            </p>
+            <p>
+                C'est avec grand plaisir que je vous accueille du mardi au samedi de 18h à 21h30 pour déguster nos délicieuses pizzas.
+            </p>
+          </div>
+        </div>
+        
         <p>
             Alors à bientôt,
             <br>
             Aurélien
-        </p>    
+        </p>
       </div>
     </section>
 
@@ -84,96 +86,94 @@
       <div></div>
     </section>
 
-      <section class="hero-menu">
-        <div class="container">
-          <div class="items">
-              <div class="item">
-                  <div class="image img1"></div>
-              </div>
-              <div class=" item">
-                  <div class="image img2"></div>
-              </div>
-              <div class="item active">
-                  <div class="image img3"></div>
-              </div>
-              <div class="item next">
-                  <div class="image2 img1"></div>
-              </div>
-              <div class="item">
-                  <div class="image2 img2"></div>
-              </div>
-              <div class="item prev">
-                  <div class="image2 img3"></div>
-              </div>
-              <div class="button-container no-select">
-                  <div class="button">&#8249;</div>
-                  <div class="button">&#8250;</div>
-              </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="hero-piza-du-mois">
-        <div class="container">
-              <script>
-                document.write(	
-                  '<div id="hero-piza-du-mois">'+
-                      '<div id="hero-piza-du-mois-pic">'+
-                        '<img src="../pizzaDuMois/pizza.jpg">'+
-                      '</div>'+
-                      '<div id="hero-piza-du-mois-info">'+
-                          '<div id="hero-piza-du-mois-info-title">'+
-                              '<h1>'+pizza.nom+'</h1>'+
-                              '<div></div>'+
-                          '</div>'+
-                          '<p><br></p>'+
-                          '<p id="hero-piza-du-mois-info-txt01">'+pizza.description+'</p>'+
-                      '</div>'+
-                  '</div>'+
-                  '<p><br></p>'
-                );
-              </script>
+    <section class="hero-menu">
+      <div class="container">
+        <div class="items">
+            <div class="item">
+                <div class="image img1"></div>
             </div>
-        </section>
+            <div class="item">
+                <div class="image img2"></div>
+            </div>
+            <div class="item active">
+                <div class="image img3"></div>
+            </div>
+            <div class="item next">
+                <div class="image2 img1"></div>
+            </div>
+            <div class="item">
+                <div class="image2 img2"></div>
+            </div>
+            <div class="item prev">
+                <div class="image2 img3"></div>
+            </div>
+            <div class="button-container no-select">
+                <div class="button">&#8249;</div>
+                <div class="button">&#8250;</div>
+            </div>
+        </div>
+      </div>
+    </section>
+      
+    <div class="container">
+      <script>
+        document.write(	
+          '<section class="sep">'+
+              '<h1>'+pizza.nom+'</h1>'+
+              '<div></div>'+
+          '</section>'+
+          '<div id="hero-pizza-du-mois">'+
+              '<div id="hero-pizza-du-mois-pic">'+
+                '<img src="../pizzaDuMois/pizza.jpg" alt="Pizza du mois">'+
+              '</div>'+
+              '<div id="hero-pizza-du-mois-info">'+
+                  '<p id="hero-pizza-du-mois-info-txt01">'+pizza.description+'</p>'+
+              '</div>'+
+          '</div>'+
+          '<p><br></p>'
+        );
+      </script>
+    </div>
 
+    <div id="contact"><br><br><br></div>
+    <section class="sep">
+      <script>document.write('<h1>' +	contact.i1[lan] + '</h1>')</script>
+      <div></div>
+    </section>
 
-      <div id="contact"><br><br><br></div>
-      <section class="sep">
-        <script>document.write('<h1>' +	contact.i1[lan] + '</h1>')</script>
-        <div></div>
-      </section>
-
-      <section class="contacts">
-        <div class="container">
-          <script>
-            document.write(	
-              '<div class="contact-container">'+
-                '<div class="contact-info">'+
-                  '<div class="contact-item">'+
-                    '<img src="https://img.icons8.com/material-rounded/24/000000/phone.png"/>'+
-                    '<span>'+contact.i2[lan]+' : <a href="tel:'+all.num[lan]+'">'+all.num[lan]+'</a></span>'+
-                  '</div>'+
-                  '<div class="contact-item">'+
-                    '<img src="https://img.icons8.com/material-rounded/24/000000/email.png"/>'+
-                    '<span>Email : <a href="mailto:'+all.adresseEmail[lan]+'">'+all.adresseEmail[lan]+'</a></span>'+
-                  '</div>'+
-                  '<div class="contact-item">'+
-                    '<img src="https://img.icons8.com/material-rounded/24/000000/facebook.png"/>'+
-                    '<span>Facebook : <a href="'+ReseauxSociaux.facebook[lan]+'" target="_blank">'+all.nom[lan]+'</a></span>'+
-                  '</div>'+
-                  '<div class="contact-item">'+
-                    '<img src="https://img.icons8.com/material-rounded/24/000000/instagram-new.png">'+
-                    '<span>Instagram : <a href="'+ReseauxSociaux.instagram[lan]+'" target="_blank">'+all.insta[lan]+'</a></span>'+
-                  '</div>'+
+    <section class="contacts">
+      <div class="container">
+        <script>
+          document.write(	
+            '<div class="contact-container">'+
+              '<div class="contact-info">'+
+                '<div class="contact-item">'+
+                  '<span><img src="https://img.icons8.com/material-rounded/24/000000/phone.png"/>'+contact.i2[lan]+' : <a href="tel:'+all.num[lan]+'">'+all.num[lan]+'</a></span>'+
+                '</div>'+
+                '<div class="contact-item">'+
+                  '<span><img src="https://img.icons8.com/material-rounded/24/000000/email.png"/>Email : <a href="mailto:'+all.adresseEmail[lan]+'">'+all.adresseEmail[lan]+'</a></span>'+
+                '</div>'+
+                '<div class="contact-item">'+
+                  '<span><img src="https://img.icons8.com/material-rounded/24/000000/facebook.png"/>Facebook : <a href="'+ReseauxSociaux.facebook[lan]+'" target="_blank">'+all.nom[lan]+'</a></span>'+
+                '</div>'+
+                '<div class="contact-item">'+
+                  '<span><img src="https://img.icons8.com/material-rounded/24/000000/instagram-new.png">Instagram : <a href="'+ReseauxSociaux.instagram[lan]+'" target="_blank">'+all.insta[lan]+'</a></span>'+
                 '</div>'+
               '</div>'+
-              '<div class="contact-map">'+
-                '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.4252651954707!2d1.492612776568589!3d43.84701357109364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ac1f3a685a7135%3A0x598091297aaf7654!2s1%20Av.%20Michel%20Rocard%2C%2031340%20Villemur-sur-Tarn!5e0!3m2!1sfr!2sfr!4v1689116379173!5m2!1sfr!2sfr" id="iframePage" onload="loadIframe(this)" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'+
-              '</div>'
-            )
-          </script>
-        </div>
+            '</div>'+
+            '<div class="contact-map">'+
+              '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.4252651954707!2d1.492612776568589!3d43.84701357109364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ac1f3a685a7135%3A0x598091297aaf7654!2s1%20Av.%20Michel%20Rocard%2C%2031340%20Villemur-sur-Tarn!5e0!3m2!1sfr!2sfr!4v1689116379173!5m2!1sfr!2sfr" id="iframePage" onload="loadIframe(this)" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'+
+            '</div>'
+          )
+        </script>
+      </div>
     </section>
+
+    <script>
+      function loadIframe(iframe) {
+        console.log("L'iframe est chargé.");
+      }
+    </script>
 
     <script src="animations/accueil/accueilAnim.js"></script>
     <script src="../js/menu.js"></script>
@@ -181,6 +181,5 @@
     <footer>
       <script src="../js/footer.js"></script>
     </footer>
-
 </body>
 </html>
