@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.wheel {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.wheel-item {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  background-color: #3498db;
+  border-radius: 50%; /* Garde le bord arrondi pour un effet circulaire */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Ajoute une ombre pour un effet 3D léger */
+}
+
+.wheel-item:hover {
+    transform: scale(1.1);
+}
+
+audio {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 300px;
+}
+
+#next-song {
+    /* Style du bouton */
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  
+#previous-song {
+    /* Style du bouton */
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
