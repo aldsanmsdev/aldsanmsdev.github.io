@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tirage au sort Game Jam</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #111;
+      color: white;
+      padding-top: 50px;
+    }
+    .slot-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+    .slot {
+      background: #222;
+      border: 2px solid #555;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+      font-size: 1.5rem;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 10px;
+      background: #0f62fe;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0043ce;
+    }
+    .title-theme {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎰 Tirage Game Jam 🎰</h1>
+  <div class="title-theme">Thème principal : 🌙 Le Rêve</div>
+  <div class="slot-container">
+    <div>
+      <h2 style='margin-bottom: 10px;'>Sous-thème</h2>
+      <div id="theme" class="slot">Sous-thème</div>
+    </div>
+    <div>
+      <h2 style='margin-bottom: 10px;'>Objet</h2>
+      <div id="objet" class="slot">Objet</div>
+    </div>
+    
+  </div>
+  <button onclick="tirer()">Tirer au sort</button>
+
+  <script>
+    const sousThemes = [
+      "Mutation / Évolution",
+      "Tout recommence",
+      "L’autre côté",
+      "Une seule chance",
+      "Rien n’est réel",
+      "Le monde change à chaque pas",
+      "C’est cassé, mais ça fonctionne",
+      "Contrôle indirect",
+      "La vérité est cachée",
+      "Seul dans la foule",
+      "Mini devient géant",
+      "Jour / Nuit",
+      "Ce que je touche change",
+      "Une erreur dans le système",
+      "Tout s’inverse",
+      "Le silence",
+      "Invisible mais présent",
+      "Coopération obligatoire",
+      "Toujours plus vite",
+      "Une mémoire qui s’efface",
+      "Il faut désobéir",
+      "Le monde est vivant",
+      "Illusion ou réalité",
+      "Perdre pour gagner",
+      "Rien n’est comme il semble",
+      "Les règles changent tout le temps",
+      "L’électricité est la clé",
+      "L’équilibre est fragile",
+      "Le héros est le méchant",
+      "Le pouvoir d’un mot",
+      "Ce que je dessine devient réel",
+      "La lumière est dangereuse",
+      "Je ne contrôle que le décor",
+      "La gravité est folle",
+      "Un ami imaginaire",
+      "Voyage sans fin",
+      "Réparer pour avancer",
+      "Tu es observé",
+      "Chaque mort compte",
+      "Le monde dans un miroir",
+      "L’eau est un ennemi",
+      "Tout est basé sur le son",
+      "Le temps est une ressource",
+      "Des mondes superposés",
+      "Sauver un souvenir",
+      "Grandir… trop vite",
+      "Tout tient à une décision",
+      "L’invention qui a mal tourné",
+      "Piégé dans une boucle",
+      "La nature reprend ses droits",
+      "Le monde est minuscule",
+      "À travers les rêves",
+      "L’intelligence artificielle décide",
+      "Une machine qui parle",
+      "Tout est à l’envers",
+      "Des portails partout",
+      "Tu es suivi",
+      "Le passé influence tout",
+      "Une énigme dans chaque pièce",
+      "Les couleurs ont un sens"
+    ];
+
+    const objets = [
+      "Plante", "Montre", "Ballon", "Ombre", "Boîte", "Miroir", "Échelle", "Casque",
+      "Clé", "Papier", "Télécommande", "Parapluie", "Lunettes", "Livre",
+      "Sac", "Crayon", "Ordinateur", "Lampe", "Téléphone",
+      "Boussole", "Cube", "Doudou", "Gomme",
+      "Gâteau", "Machine", "Masque", "Cadenas", "Télévision",
+      "Brosse", "Trampoline", "Chaussure", "Carte",
+      "Instrument", "Ticket", "Tapis", "Journaux", "Corde", "Pièce",
+      "Graine", "Chapeau", "Roue", "Musique",
+      "Gobelet", "Mécanisme", "Feuille",
+      "Photo", "Montgolfière", "Clé USB", "Animal",
+      "Météorite", "Poussière", "Mèche", "Fragment",
+      "Bocal", "Gant", "Poupée", "Tatouage"
+    ];
+
+    function randomItem(list) {
+      return list[Math.floor(Math.random() * list.length)];
+    }
+
+    function tirer() {
+      let t = document.getElementById("theme");
+      let o = document.getElementById("objet");
+
+      let i = 0;
+      const interval = setInterval(() => {
+        t.innerText = randomItem(sousThemes);
+        o.innerText = randomItem(objets);
+        i++;
+        if (i > 20) clearInterval(interval);
+      }, 100);
+    }
+  </script>
+</body>
+</html>
